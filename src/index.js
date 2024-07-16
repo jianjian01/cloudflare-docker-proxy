@@ -22,17 +22,17 @@ const domain = 'dooest.com';
 
 const routes = {
    // production
-  `docker.${domain}`: dockerHub,
-  `quay.${domain}`: "https://quay.io",
-  `gcr.${domain}`: "https://gcr.io",
-  `k8s-gcr.${domain}`: "https://k8s.gcr.io",
-  `k8s.${domain}`: "https://registry.k8s.io",
-  `ghcr.${domain}`: "https://ghcr.io",
-  `cloudsmith.${domain}`: "https://docker.cloudsmith.io",
-  `ecr.${domain}`: "https://public.ecr.aws",
+  "docker.dooest.com": dockerHub,
+  "quay.dooest.com": "https://quay.io",
+  "gcr.dooest.com": "https://gcr.io",
+  "k8s-gcr.dooest.com": "https://k8s.gcr.io",
+  "k8s.dooest.com": "https://registry.k8s.io",
+  "ghcr.dooest.com": "https://ghcr.io",
+  "cloudsmith.dooest.com": "https://docker.cloudsmith.io",
+  "ecr.dooest.com": "https://public.ecr.aws",
 
   // staging
-  `docker-staging.${domain}`: dockerHub,
+  "docker-staging.${domain}": dockerHub,
 };
 
 function routeByHosts(host) {
